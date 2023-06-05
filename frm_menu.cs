@@ -16,8 +16,6 @@ namespace Projeto_Autotech_2
         {
             InitializeComponent();
             pnl_produtos.Size = pnl_produtos.MinimumSize;
-            pnl_servicos.Size = pnl_servicos.MinimumSize;
-            pnl_servicos.Location = new Point(0, 100);
         }
         //---------- Sobre a Autotech ----------
         private void lbl_autotech_Click(object sender, EventArgs e)
@@ -41,23 +39,13 @@ namespace Projeto_Autotech_2
         private void btn_produtos_Click(object sender, EventArgs e)
         {
             pnl_produtos.Size = pnl_produtos.MaximumSize;
-            pnl_servicos.Size = pnl_servicos.MinimumSize;
-            pnl_servicos.Location = new Point(0, 165);
             btn_produtos.Image = Properties.Resources.seta;
-            btn_servicos.Image = Properties.Resources.seta_horizontal;
+
 
         }
         // ----------
 
         // ---------- Serviços ----------
-        private void btn_servicos_Click_1(object sender, EventArgs e)
-        {
-            pnl_produtos.Size = pnl_produtos.MinimumSize;
-            pnl_servicos.Size = pnl_servicos.MaximumSize;
-            pnl_servicos.Location = new Point(0, 100);
-            btn_servicos.Image = Properties.Resources.seta;
-            btn_produtos.Image = Properties.Resources.seta_horizontal;
-        }
 
         //---------- Login ----------
 
@@ -101,7 +89,11 @@ namespace Projeto_Autotech_2
         // ----------- Sair -----------
         private void lbl_sair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            lbl_sair.ForeColor = Color.FromArgb(23, 24, 26);
+            if (MessageBox.Show("Deseja sair do Sistema?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void lbl_sair_MouseEnter(object sender, EventArgs e)

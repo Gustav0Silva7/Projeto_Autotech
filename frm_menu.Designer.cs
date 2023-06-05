@@ -36,35 +36,30 @@ namespace Projeto_Autotech_2
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnl_menu = new System.Windows.Forms.Panel();
-            this.pnl_servicos = new System.Windows.Forms.Panel();
-            this.btn_descontos = new System.Windows.Forms.Button();
-            this.btn_prestacao = new System.Windows.Forms.Button();
-            this.btn_servicos = new System.Windows.Forms.Button();
-            this.btn_autotech = new System.Windows.Forms.Button();
+            this.flp_produtos = new System.Windows.Forms.FlowLayoutPanel();
             this.pnl_produtos = new System.Windows.Forms.Panel();
             this.btn_comprovante = new System.Windows.Forms.Button();
             this.btn_vendas = new System.Windows.Forms.Button();
             this.btn_produtos = new System.Windows.Forms.Button();
-            this.flp_produtos = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_autotech = new System.Windows.Forms.Button();
+            this.pnl_menu = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnl_menu.SuspendLayout();
-            this.pnl_servicos.SuspendLayout();
             this.pnl_produtos.SuspendLayout();
+            this.pnl_menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_sair
             // 
             this.lbl_sair.AutoSize = true;
             this.lbl_sair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_sair.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_sair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(26)))));
             this.lbl_sair.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lbl_sair.Location = new System.Drawing.Point(1297, 23);
             this.lbl_sair.Name = "lbl_sair";
             this.lbl_sair.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.lbl_sair.Size = new System.Drawing.Size(42, 19);
+            this.lbl_sair.Size = new System.Drawing.Size(44, 20);
             this.lbl_sair.TabIndex = 3;
             this.lbl_sair.Text = "Sair";
             this.lbl_sair.Click += new System.EventHandler(this.lbl_sair_Click);
@@ -75,12 +70,12 @@ namespace Projeto_Autotech_2
             // 
             this.lbl_cadastro.AutoSize = true;
             this.lbl_cadastro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_cadastro.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_cadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_cadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(26)))));
             this.lbl_cadastro.Location = new System.Drawing.Point(1207, 23);
             this.lbl_cadastro.Name = "lbl_cadastro";
             this.lbl_cadastro.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.lbl_cadastro.Size = new System.Drawing.Size(84, 19);
+            this.lbl_cadastro.Size = new System.Drawing.Size(85, 20);
             this.lbl_cadastro.TabIndex = 3;
             this.lbl_cadastro.Text = "Cadastro";
             this.lbl_cadastro.Click += new System.EventHandler(this.lbl_cadastro_Click);
@@ -91,12 +86,12 @@ namespace Projeto_Autotech_2
             // 
             this.lbl_login.AutoSize = true;
             this.lbl_login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_login.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(26)))));
             this.lbl_login.Location = new System.Drawing.Point(1146, 23);
             this.lbl_login.Name = "lbl_login";
             this.lbl_login.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.lbl_login.Size = new System.Drawing.Size(55, 19);
+            this.lbl_login.Size = new System.Drawing.Size(56, 20);
             this.lbl_login.TabIndex = 2;
             this.lbl_login.Text = "Login";
             this.lbl_login.Click += new System.EventHandler(this.lbl_login_Click);
@@ -136,92 +131,13 @@ namespace Projeto_Autotech_2
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // pnl_menu
+            // flp_produtos
             // 
-            this.pnl_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(112)))), ((int)(((byte)(181)))));
-            this.pnl_menu.Controls.Add(this.pnl_servicos);
-            this.pnl_menu.Controls.Add(this.btn_autotech);
-            this.pnl_menu.Controls.Add(this.pnl_produtos);
-            this.pnl_menu.Location = new System.Drawing.Point(0, 64);
-            this.pnl_menu.Name = "pnl_menu";
-            this.pnl_menu.Size = new System.Drawing.Size(176, 686);
-            this.pnl_menu.TabIndex = 8;
-            // 
-            // pnl_servicos
-            // 
-            this.pnl_servicos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(43)))), ((int)(((byte)(95)))));
-            this.pnl_servicos.Controls.Add(this.btn_descontos);
-            this.pnl_servicos.Controls.Add(this.btn_prestacao);
-            this.pnl_servicos.Controls.Add(this.btn_servicos);
-            this.pnl_servicos.Location = new System.Drawing.Point(0, 100);
-            this.pnl_servicos.MaximumSize = new System.Drawing.Size(176, 110);
-            this.pnl_servicos.MinimumSize = new System.Drawing.Size(176, 45);
-            this.pnl_servicos.Name = "pnl_servicos";
-            this.pnl_servicos.Size = new System.Drawing.Size(176, 45);
-            this.pnl_servicos.TabIndex = 12;
-            // 
-            // btn_descontos
-            // 
-            this.btn_descontos.FlatAppearance.BorderSize = 0;
-            this.btn_descontos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_descontos.Font = new System.Drawing.Font("Inter", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_descontos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(240)))));
-            this.btn_descontos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_descontos.Location = new System.Drawing.Point(0, 82);
-            this.btn_descontos.Name = "btn_descontos";
-            this.btn_descontos.Size = new System.Drawing.Size(176, 25);
-            this.btn_descontos.TabIndex = 11;
-            this.btn_descontos.Text = "Descontos";
-            this.btn_descontos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_descontos.UseVisualStyleBackColor = true;
-            // 
-            // btn_prestacao
-            // 
-            this.btn_prestacao.FlatAppearance.BorderSize = 0;
-            this.btn_prestacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_prestacao.Font = new System.Drawing.Font("Inter", 8F, System.Drawing.FontStyle.Bold);
-            this.btn_prestacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(240)))));
-            this.btn_prestacao.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_prestacao.Location = new System.Drawing.Point(0, 51);
-            this.btn_prestacao.Name = "btn_prestacao";
-            this.btn_prestacao.Size = new System.Drawing.Size(176, 25);
-            this.btn_prestacao.TabIndex = 10;
-            this.btn_prestacao.Text = "Prestação de Serviços";
-            this.btn_prestacao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_prestacao.UseVisualStyleBackColor = true;
-            // 
-            // btn_servicos
-            // 
-            this.btn_servicos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(112)))), ((int)(((byte)(181)))));
-            this.btn_servicos.FlatAppearance.BorderSize = 0;
-            this.btn_servicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_servicos.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_servicos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(240)))));
-            this.btn_servicos.Image = global::Projeto_Autotech_2.Properties.Resources.seta_horizontal;
-            this.btn_servicos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_servicos.Location = new System.Drawing.Point(0, 0);
-            this.btn_servicos.Name = "btn_servicos";
-            this.btn_servicos.Size = new System.Drawing.Size(176, 45);
-            this.btn_servicos.TabIndex = 0;
-            this.btn_servicos.Text = "Serviços";
-            this.btn_servicos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_servicos.UseVisualStyleBackColor = false;
-            this.btn_servicos.Click += new System.EventHandler(this.btn_servicos_Click_1);
-            // 
-            // btn_autotech
-            // 
-            this.btn_autotech.FlatAppearance.BorderSize = 0;
-            this.btn_autotech.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_autotech.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_autotech.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(240)))));
-            this.btn_autotech.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_autotech.Location = new System.Drawing.Point(0, 10);
-            this.btn_autotech.Name = "btn_autotech";
-            this.btn_autotech.Size = new System.Drawing.Size(173, 45);
-            this.btn_autotech.TabIndex = 1;
-            this.btn_autotech.Text = "Autotech";
-            this.btn_autotech.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_autotech.UseVisualStyleBackColor = true;
+            this.flp_produtos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(112)))), ((int)(((byte)(181)))));
+            this.flp_produtos.Location = new System.Drawing.Point(261, 64);
+            this.flp_produtos.Name = "flp_produtos";
+            this.flp_produtos.Size = new System.Drawing.Size(116, 0);
+            this.flp_produtos.TabIndex = 0;
             // 
             // pnl_produtos
             // 
@@ -240,7 +156,7 @@ namespace Projeto_Autotech_2
             // 
             this.btn_comprovante.FlatAppearance.BorderSize = 0;
             this.btn_comprovante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_comprovante.Font = new System.Drawing.Font("Inter", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_comprovante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btn_comprovante.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(240)))));
             this.btn_comprovante.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_comprovante.Location = new System.Drawing.Point(0, 80);
@@ -255,7 +171,7 @@ namespace Projeto_Autotech_2
             // 
             this.btn_vendas.FlatAppearance.BorderSize = 0;
             this.btn_vendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_vendas.Font = new System.Drawing.Font("Inter", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_vendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btn_vendas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(240)))));
             this.btn_vendas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_vendas.Location = new System.Drawing.Point(0, 51);
@@ -271,7 +187,7 @@ namespace Projeto_Autotech_2
             this.btn_produtos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(112)))), ((int)(((byte)(181)))));
             this.btn_produtos.FlatAppearance.BorderSize = 0;
             this.btn_produtos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_produtos.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_produtos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btn_produtos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(240)))));
             this.btn_produtos.Image = global::Projeto_Autotech_2.Properties.Resources.seta_horizontal;
             this.btn_produtos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -284,24 +200,41 @@ namespace Projeto_Autotech_2
             this.btn_produtos.UseVisualStyleBackColor = false;
             this.btn_produtos.Click += new System.EventHandler(this.btn_produtos_Click);
             // 
-            // flp_produtos
+            // btn_autotech
             // 
-            this.flp_produtos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(112)))), ((int)(((byte)(181)))));
-            this.flp_produtos.Location = new System.Drawing.Point(261, 64);
-            this.flp_produtos.Name = "flp_produtos";
-            this.flp_produtos.Size = new System.Drawing.Size(116, 0);
-            this.flp_produtos.TabIndex = 0;
+            this.btn_autotech.FlatAppearance.BorderSize = 0;
+            this.btn_autotech.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_autotech.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_autotech.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(240)))));
+            this.btn_autotech.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_autotech.Location = new System.Drawing.Point(0, 10);
+            this.btn_autotech.Name = "btn_autotech";
+            this.btn_autotech.Size = new System.Drawing.Size(173, 45);
+            this.btn_autotech.TabIndex = 1;
+            this.btn_autotech.Text = "Autotech";
+            this.btn_autotech.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_autotech.UseVisualStyleBackColor = true;
+            // 
+            // pnl_menu
+            // 
+            this.pnl_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(112)))), ((int)(((byte)(181)))));
+            this.pnl_menu.Controls.Add(this.btn_autotech);
+            this.pnl_menu.Controls.Add(this.pnl_produtos);
+            this.pnl_menu.Location = new System.Drawing.Point(0, 64);
+            this.pnl_menu.Name = "pnl_menu";
+            this.pnl_menu.Size = new System.Drawing.Size(176, 686);
+            this.pnl_menu.TabIndex = 8;
             // 
             // frm_menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.pnl_menu);
             this.Controls.Add(this.flp_produtos);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Inter", 12F);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(26)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -312,9 +245,8 @@ namespace Projeto_Autotech_2
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnl_menu.ResumeLayout(false);
-            this.pnl_servicos.ResumeLayout(false);
             this.pnl_produtos.ResumeLayout(false);
+            this.pnl_menu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -326,17 +258,13 @@ namespace Projeto_Autotech_2
         private System.Windows.Forms.Label lbl_login;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel pnl_menu;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel flp_produtos;
-        private System.Windows.Forms.Button btn_produtos;
-        private System.Windows.Forms.Button btn_autotech;
         private System.Windows.Forms.Panel pnl_produtos;
         private System.Windows.Forms.Button btn_comprovante;
         private System.Windows.Forms.Button btn_vendas;
-        private System.Windows.Forms.Panel pnl_servicos;
-        private System.Windows.Forms.Button btn_descontos;
-        private System.Windows.Forms.Button btn_prestacao;
-        private System.Windows.Forms.Button btn_servicos;
+        private System.Windows.Forms.Button btn_produtos;
+        private System.Windows.Forms.Button btn_autotech;
+        private System.Windows.Forms.Panel pnl_menu;
     }
 }

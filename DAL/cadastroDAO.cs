@@ -11,28 +11,26 @@ namespace Projeto_Autotech_2.DAL
     {
         private MySqlCommand cmd;
         private conexaoDAO con;
-        private MySqlDataReader dr;
         public string mensagem;
         public bool verificador;
+
 
 
         public cadastroDAO() { 
         
             this.mensagem = "";
             verificador = false;
-
         }
 
-        public bool verificaCadastro(int id_cliente, string nome, string sobrenome, string data_nascimento, string logradouro,string estado, string email, string senha)
+        public bool verificaCadastro(string nome, string sobrenome, long data_nascimento, string logradouro,string estado, string email, string senha)
         {
             con = new conexaoDAO();
             cmd = new MySqlCommand();
 
-            cmd.CommandText = "INSERT INTO cliente(id_cliente,nome,sobrenome,data_nascimento,logradouro,estado,email,senha) values(@id_cliente, @nome, @sobrenome, STR_TO_DATE(@data_nascimento, '%d/%m/%Y'), @logradouro, @estado, @email, @senha)";
-            cmd.Parameters.AddWithValue("@id_cliente", id_cliente);
+            cmd.CommandText = "INSERT INTO cliente(nome, sobrenome, data_nascimento, logradouro, estado, email, senha) VALUES (@nome, @sobrenome, @data_nascimento, @logradouro, @estado, @email, @senha)";
             cmd.Parameters.AddWithValue("@nome", nome);
             cmd.Parameters.AddWithValue("@sobrenome", sobrenome);
-            cmd.Parameters.AddWithValue("@data_nascimento", data_nascimento);
+            cmd.Parameters.AddWithValue("@data_nascimento", new DateTime (data_nascimento));
             cmd.Parameters.AddWithValue("@logradouro", logradouro);
             cmd.Parameters.AddWithValue("@estado", estado);
             cmd.Parameters.AddWithValue("@email", email);
@@ -45,6 +43,15 @@ namespace Projeto_Autotech_2.DAL
                 if (rowsAffected >0)
                 {
                     verificador = true;
+                    SessaoDAO sessao = new SessaoDAO();
+                    bool sessaoIniciada = sessao.IniciarSessao(email, senha);
+                    if (sessaoIniciada)
+                    {  
+                        string emailSessao = sessao.Email;
+                        string senhaSessao = sessao.Senha;
+ 
+                    }
+
                 }
 
             }

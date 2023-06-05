@@ -86,14 +86,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\atualizaDAO.cs" />
     <Compile Include="DAL\cadastroDAO.cs" />
     <Compile Include="DAL\conexaoDAO.cs" />
+    <Compile Include="DAL\deleteDAO.cs" />
     <Compile Include="DAL\loginDAO.cs" />
+    <Compile Include="DAL\SessaoDAO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_atualizarDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_atualizarDados.Designer.cs">
+      <DependentUpon>frm_atualizarDados.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_cadastro.cs">
       <SubType>Form</SubType>
@@ -101,11 +110,23 @@
     <Compile Include="frm_cadastro.Designer.cs">
       <DependentUpon>frm_cadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_dados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_dados.Designer.cs">
+      <DependentUpon>frm_dados.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_login.Designer.cs">
       <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_logon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_logon.Designer.cs">
+      <DependentUpon>frm_logon.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_menu.cs">
       <SubType>Form</SubType>
@@ -118,11 +139,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_atualizarDados.resx">
+      <DependentUpon>frm_atualizarDados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_cadastro.resx">
       <DependentUpon>frm_cadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_dados.resx">
+      <DependentUpon>frm_dados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_logon.resx">
+      <DependentUpon>frm_logon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_menu.resx">
       <DependentUpon>frm_menu.cs</DependentUpon>

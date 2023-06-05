@@ -20,6 +20,11 @@ namespace Projeto_Autotech_2.DAL
             verificador = false;
         }
 
+        public string nomeCliente { get; private set; }
+        public static int clienteEmSessao { get; private set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }
+
         public bool verificaLogin(string email, string senha)
         {
             con = new conexaoDAO();
@@ -37,6 +42,12 @@ namespace Projeto_Autotech_2.DAL
                 if (dr.HasRows)
                 {
                     verificador = true;
+                    nomeCliente = dr["nome"].ToString();
+                    Email = email;
+                    Senha = senha;
+
+                    SessaoDAO sessao = new SessaoDAO();
+                    sessao.IniciarSessao(email, senha);
                 }
 
             }

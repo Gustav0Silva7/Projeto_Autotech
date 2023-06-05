@@ -27,12 +27,28 @@ namespace Projeto_Autotech_2
 
             login = new loginDAO();
             bool retorno = login.verificaLogin(email, senha);
-            
-            if(retorno)
+
+            if (retorno)
             {
-                frm_menu menu = new frm_menu();
-                menu.Show();
-                this.Hide();
+                MessageBox.Show("Seja bem vindo(a) a Autotech", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                SessaoDAO sessao = new SessaoDAO();
+                sessao.Email = email;
+                sessao.Senha = senha;
+                bool sessaoIniciada = sessao.IniciarSessao(email, senha);
+                if (sessaoIniciada)
+                {
+
+                    string emailSessao = sessao.Email;
+                    string senhaSessao = sessao.Senha;
+
+                    frm_logon logon = new frm_logon(sessao);
+                    this.Hide();
+                    logon.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao iniciar a sessão", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
@@ -107,7 +123,10 @@ namespace Projeto_Autotech_2
         // ---------- Sair
         private void lbl_sair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Deseja sair do Sistema?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void lbl_sair_MouseEnter(object sender, EventArgs e)
@@ -129,7 +148,14 @@ namespace Projeto_Autotech_2
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            entrarSistema();
+            if(txt_email.TextLength >= 10 && (txt_email.Text.Contains("@gmail.com") || txt_email.Text.Contains("@yahoo.com") || txt_email.Text.Contains("@outlook.com") || txt_email.Text.Contains("uni9.edu.br")) && txt_senha.TextLength >= 5)
+            {
+                entrarSistema();
+            }
+            else
+            {
+                MessageBox.Show("Dados incompletos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
