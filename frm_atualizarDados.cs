@@ -24,9 +24,12 @@ namespace Projeto_Autotech_2
         {
             string email = sessao.Email;
             string senha = sessao.Senha;
-            string nomeCliente = sessao.NomeCliente;
-            lbl_usuario.Text = nomeCliente;
-
+            SessaoDAO sessaoDAO = new SessaoDAO();
+            if (sessaoDAO.IniciarSessao(email, senha))
+            {
+                string nomeCliente = sessao.NomeCliente;
+                lbl_usuario.Text = nomeCliente;
+            }
         }
         private void encerrarSessao()
         {
@@ -110,6 +113,15 @@ namespace Projeto_Autotech_2
             this.Hide();
             logon.Show();
         }
+        private void lbl_voltar_MouseEnter(object sender, EventArgs e)
+        {
+            lbl_voltar.ForeColor = Color.FromArgb(85, 112, 181);
+        }
+
+        private void lbl_voltar_MouseLeave(object sender, EventArgs e)
+        {
+            lbl_voltar.ForeColor = Color.FromArgb(23, 24, 26);
+        }
 
         private void lbl_sair_Click(object sender, EventArgs e)
         {
@@ -117,6 +129,15 @@ namespace Projeto_Autotech_2
             {
                 Application.Exit();
             }
+        }
+        private void lbl_sair_MouseEnter(object sender, EventArgs e)
+        {
+            lbl_sair.ForeColor = Color.FromArgb(85, 112, 181);
+        }
+
+        private void lbl_sair_MouseLeave(object sender, EventArgs e)
+        {
+            lbl_sair.ForeColor = Color.FromArgb(23, 24, 26);
         }
 
         private void btn_logoff_Click(object sender, EventArgs e)
@@ -152,6 +173,86 @@ namespace Projeto_Autotech_2
                 }
             }
         }
-        
+
+        private void lbl_usuario_Click(object sender, EventArgs e)
+        {
+            pnl_usuario.Size = pnl_usuario.MaximumSize;
+        }
+        private void lbl_usuario_MouseEnter(object sender, EventArgs e)
+        {
+            lbl_usuario.ForeColor = Color.FromArgb(85, 112, 181);
+        }
+
+        private void lbl_usuario_MouseLeave(object sender, EventArgs e)
+        {
+            lbl_usuario.ForeColor = Color.FromArgb(23, 24, 26);
+        }
+
+        private void btn_conferirDados_Click(object sender, EventArgs e)
+        {
+            frm_dados dados = new frm_dados(sessao);
+            dados.Show();
+            this.Hide();
+        }
+
+        private void txt_nome_Enter(object sender, EventArgs e)
+        {
+            pnl_nome.BackColor = Color.FromArgb(23, 24, 26);
+        }
+
+        private void txt_nome_Leave(object sender, EventArgs e)
+        {
+            pnl_nome.BackColor = Color.FromArgb(237, 235, 240);
+        }
+
+        private void txt_sobrenome_Enter(object sender, EventArgs e)
+        {
+            pnl_sobrenome.BackColor = Color.FromArgb(23, 24, 26);
+        }
+
+        private void txt_sobrenome_Leave(object sender, EventArgs e)
+        {
+            pnl_sobrenome.BackColor = Color.FromArgb(237, 235, 240);
+        }
+
+        private void msk_data_Enter(object sender, EventArgs e)
+        {
+            pnl_data.BackColor = Color.FromArgb(23, 24, 26);
+        }
+
+        private void msk_data_Leave(object sender, EventArgs e)
+        {
+            pnl_data.BackColor = Color.FromArgb(237, 235, 240);
+        }
+
+        private void txt_email_Enter(object sender, EventArgs e)
+        {
+            pnl_email.BackColor = Color.FromArgb(23, 24, 26);
+        }
+
+        private void txt_email_Leave(object sender, EventArgs e)
+        {
+            pnl_email.BackColor = Color.FromArgb(237, 235, 240);
+        }
+
+        private void txt_logradouro_Enter(object sender, EventArgs e)
+        {
+            pnl_logradouro.BackColor = Color.FromArgb(23, 24, 26);
+        }
+
+        private void txt_logradouro_Leave(object sender, EventArgs e)
+        {
+            pnl_logradouro.BackColor = Color.FromArgb(237, 235, 240);
+        }
+
+        private void txt_senha_Enter(object sender, EventArgs e)
+        {
+            pnl_senha.BackColor = Color.FromArgb(23, 24, 26);
+        }
+
+        private void txt_senha_Leave(object sender, EventArgs e)
+        {
+            pnl_senha.BackColor = Color.FromArgb(237, 235, 240);
+        }
     }
 }

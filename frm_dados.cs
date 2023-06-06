@@ -21,14 +21,17 @@ namespace Projeto_Autotech_2
             this.sessao = sessao;
         }
 
- 
+
         private void iniciarSessao()
         {
             string email = sessao.Email;
             string senha = sessao.Senha;
-            string nomeCliente = sessao.NomeCliente;
-            lbl_usuario.Text = nomeCliente;
-
+            SessaoDAO sessaoDAO = new SessaoDAO();
+            if (sessaoDAO.IniciarSessao(email, senha))
+            {
+                string nomeCliente = sessao.NomeCliente;
+                lbl_usuario.Text = nomeCliente;
+            }
         }
         private void encerrarSessao()
         {

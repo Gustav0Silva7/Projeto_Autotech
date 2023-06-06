@@ -35,8 +35,8 @@ namespace Projeto_Autotech_2
             this.lbl_voltar = new System.Windows.Forms.Label();
             this.lbl_login = new System.Windows.Forms.Label();
             this.lbl_sair = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -56,6 +56,7 @@ namespace Projeto_Autotech_2
             this.txt_email = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.cbb_estado = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pnl_logradouro = new System.Windows.Forms.Panel();
@@ -72,7 +73,6 @@ namespace Projeto_Autotech_2
             this.pnl_usuario = new System.Windows.Forms.Panel();
             this.btn_logoff = new System.Windows.Forms.Button();
             this.btn_conferirDados = new System.Windows.Forms.Button();
-            this.cbb_estado = new System.Windows.Forms.ComboBox();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -114,6 +114,9 @@ namespace Projeto_Autotech_2
             this.lbl_usuario.Size = new System.Drawing.Size(74, 20);
             this.lbl_usuario.TabIndex = 14;
             this.lbl_usuario.Text = "Usuário";
+            this.lbl_usuario.Click += new System.EventHandler(this.lbl_usuario_Click);
+            this.lbl_usuario.MouseEnter += new System.EventHandler(this.lbl_usuario_MouseEnter);
+            this.lbl_usuario.MouseLeave += new System.EventHandler(this.lbl_usuario_MouseLeave);
             // 
             // lbl_voltar
             // 
@@ -128,6 +131,8 @@ namespace Projeto_Autotech_2
             this.lbl_voltar.TabIndex = 4;
             this.lbl_voltar.Text = "Voltar";
             this.lbl_voltar.Click += new System.EventHandler(this.lbl_voltar_Click);
+            this.lbl_voltar.MouseEnter += new System.EventHandler(this.lbl_voltar_MouseEnter);
+            this.lbl_voltar.MouseLeave += new System.EventHandler(this.lbl_voltar_MouseLeave);
             // 
             // lbl_login
             // 
@@ -156,17 +161,8 @@ namespace Projeto_Autotech_2
             this.lbl_sair.TabIndex = 3;
             this.lbl_sair.Text = "Sair";
             this.lbl_sair.Click += new System.EventHandler(this.lbl_sair_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(240)))), ((int)(((byte)(250)))));
-            this.label5.Location = new System.Drawing.Point(669, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(14, 20);
-            this.label5.TabIndex = 5;
-            this.label5.Text = " ";
+            this.lbl_sair.MouseEnter += new System.EventHandler(this.lbl_sair_MouseEnter);
+            this.lbl_sair.MouseLeave += new System.EventHandler(this.lbl_sair_MouseLeave);
             // 
             // pictureBox1
             // 
@@ -180,6 +176,17 @@ namespace Projeto_Autotech_2
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(240)))), ((int)(((byte)(250)))));
+            this.label5.Location = new System.Drawing.Point(669, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(14, 20);
+            this.label5.TabIndex = 5;
+            this.label5.Text = " ";
             // 
             // panel2
             // 
@@ -232,6 +239,8 @@ namespace Projeto_Autotech_2
             this.msk_data.Size = new System.Drawing.Size(81, 19);
             this.msk_data.TabIndex = 10;
             this.msk_data.ValidatingType = typeof(System.DateTime);
+            this.msk_data.Enter += new System.EventHandler(this.msk_data_Enter);
+            this.msk_data.Leave += new System.EventHandler(this.msk_data_Leave);
             // 
             // pnl_data
             // 
@@ -343,6 +352,8 @@ namespace Projeto_Autotech_2
             this.txt_senha.PasswordChar = '*';
             this.txt_senha.Size = new System.Drawing.Size(412, 19);
             this.txt_senha.TabIndex = 2;
+            this.txt_senha.Enter += new System.EventHandler(this.txt_senha_Enter);
+            this.txt_senha.Leave += new System.EventHandler(this.txt_senha_Leave);
             // 
             // label8
             // 
@@ -384,6 +395,8 @@ namespace Projeto_Autotech_2
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(412, 19);
             this.txt_email.TabIndex = 2;
+            this.txt_email.Enter += new System.EventHandler(this.txt_email_Enter);
+            this.txt_email.Leave += new System.EventHandler(this.txt_email_Leave);
             // 
             // label7
             // 
@@ -404,6 +417,23 @@ namespace Projeto_Autotech_2
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(635, 68);
             this.panel10.TabIndex = 6;
+            // 
+            // cbb_estado
+            // 
+            this.cbb_estado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(43)))), ((int)(((byte)(95)))));
+            this.cbb_estado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbb_estado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(240)))));
+            this.cbb_estado.FormattingEnabled = true;
+            this.cbb_estado.Items.AddRange(new object[] {
+            "SP",
+            "RJ"});
+            this.cbb_estado.Location = new System.Drawing.Point(163, 25);
+            this.cbb_estado.MaxDropDownItems = 28;
+            this.cbb_estado.MaxLength = 2;
+            this.cbb_estado.Name = "cbb_estado";
+            this.cbb_estado.Size = new System.Drawing.Size(201, 28);
+            this.cbb_estado.TabIndex = 6;
+            this.cbb_estado.Text = "Selecione o seu estado";
             // 
             // label6
             // 
@@ -445,6 +475,8 @@ namespace Projeto_Autotech_2
             this.txt_logradouro.Name = "txt_logradouro";
             this.txt_logradouro.Size = new System.Drawing.Size(412, 19);
             this.txt_logradouro.TabIndex = 2;
+            this.txt_logradouro.Enter += new System.EventHandler(this.txt_logradouro_Enter);
+            this.txt_logradouro.Leave += new System.EventHandler(this.txt_logradouro_Leave);
             // 
             // label4
             // 
@@ -486,6 +518,8 @@ namespace Projeto_Autotech_2
             this.txt_sobrenome.Name = "txt_sobrenome";
             this.txt_sobrenome.Size = new System.Drawing.Size(412, 19);
             this.txt_sobrenome.TabIndex = 2;
+            this.txt_sobrenome.Enter += new System.EventHandler(this.txt_sobrenome_Enter);
+            this.txt_sobrenome.Leave += new System.EventHandler(this.txt_sobrenome_Leave);
             // 
             // label3
             // 
@@ -527,6 +561,8 @@ namespace Projeto_Autotech_2
             this.txt_nome.Name = "txt_nome";
             this.txt_nome.Size = new System.Drawing.Size(412, 19);
             this.txt_nome.TabIndex = 2;
+            this.txt_nome.Enter += new System.EventHandler(this.txt_nome_Enter);
+            this.txt_nome.Leave += new System.EventHandler(this.txt_nome_Leave);
             // 
             // label2
             // 
@@ -581,23 +617,7 @@ namespace Projeto_Autotech_2
             this.btn_conferirDados.Text = "Conferir Dados";
             this.btn_conferirDados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_conferirDados.UseVisualStyleBackColor = true;
-            // 
-            // cbb_estado
-            // 
-            this.cbb_estado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(43)))), ((int)(((byte)(95)))));
-            this.cbb_estado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbb_estado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(235)))), ((int)(((byte)(240)))));
-            this.cbb_estado.FormattingEnabled = true;
-            this.cbb_estado.Items.AddRange(new object[] {
-            "SP",
-            "RJ"});
-            this.cbb_estado.Location = new System.Drawing.Point(163, 25);
-            this.cbb_estado.MaxDropDownItems = 28;
-            this.cbb_estado.MaxLength = 2;
-            this.cbb_estado.Name = "cbb_estado";
-            this.cbb_estado.Size = new System.Drawing.Size(201, 28);
-            this.cbb_estado.TabIndex = 6;
-            this.cbb_estado.Text = "Selecione o seu estado";
+            this.btn_conferirDados.Click += new System.EventHandler(this.btn_conferirDados_Click);
             // 
             // frm_atualizarDados
             // 
@@ -613,7 +633,7 @@ namespace Projeto_Autotech_2
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frm_atualizarDados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_atualizarDados";
+            this.Text = "Autotech - Atualize seus Dados";
             this.Load += new System.EventHandler(this.frm_atualizarDados_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();

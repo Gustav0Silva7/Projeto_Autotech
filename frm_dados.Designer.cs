@@ -632,7 +632,7 @@ namespace Projeto_Autotech_2
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frm_dados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_dados";
+            this.Text = "Autotech - Seus Dados";
             this.Load += new System.EventHandler(this.frm_dados_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();

@@ -17,23 +17,7 @@ namespace Projeto_Autotech_2
             InitializeComponent();
             pnl_produtos.Size = pnl_produtos.MinimumSize;
         }
-        //---------- Sobre a Autotech ----------
-        private void lbl_autotech_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void lbl_autotech_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_autotech_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
-
-        // ----------
 
         // ---------- produtos ----------
         private void btn_produtos_Click(object sender, EventArgs e)
@@ -44,8 +28,6 @@ namespace Projeto_Autotech_2
 
         }
         // ----------
-
-        // ---------- Serviços ----------
 
         //---------- Login ----------
 
@@ -103,8 +85,31 @@ namespace Projeto_Autotech_2
 
         private void lbl_sair_MouseLeave(object sender, EventArgs e)
         {
-            lbl_cadastro.ForeColor = Color.FromArgb(23, 24, 26);
+            lbl_sair.ForeColor = Color.FromArgb(23, 24, 26);
         }
-    
+
+        private void btn_comprovante_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Para verificar seu comprovante, é necessário efetuar o login no sistema. Gostaria de efetuar o Login?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                frm_login login = new frm_login();
+                login.Show();
+                this.Hide();
+            }
+        }
+
+        private void btn_vendas_Click(object sender, EventArgs e)
+        {
+            frm_loja loja = new frm_loja();
+            loja.Show();
+            this.Hide();
+        }
+
+        private void btn_autotech_Click(object sender, EventArgs e)
+        {
+            frm_autotech autotech = new frm_autotech();
+            autotech.Show();
+            this.Hide();
+        }
     }
 }

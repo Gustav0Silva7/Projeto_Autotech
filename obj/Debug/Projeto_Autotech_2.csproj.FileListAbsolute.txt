@@ -37,6 +37,11 @@ C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\bin\Debug\System.Thread
 C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\obj\Debug\Projeto_Autotech_2.csproj.CopyComplete
 C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\obj\Debug\Projeto_Autotech_2.exe
 C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\obj\Debug\Projeto_Autotech_2.pdb
-C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\obj\Debug\Projeto_Autotech_2.csproj.AssemblyReference.cache
 C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\obj\Debug\Projeto_Autotech_2.frm_dados.resources
 C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\obj\Debug\Projeto_Autotech_2.frm_atualizarDados.resources
+C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\obj\Debug\Projeto_Autotech_2.frm_loja.resources
+C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\obj\Debug\Projeto_Autotech_2.csproj.AssemblyReference.cache
+C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\obj\Debug\Projeto_Autotech_2.frm_comprar.resources
+C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\obj\Debug\Projeto_Autotech_2.frm_comprovante.resources
+C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\obj\Debug\Projeto_Autotech_2.frm_atSessao.resources
+C:\Users\lopes\OneDrive\Documentos\C#\Projeto_Autotech_2\obj\Debug\Projeto_Autotech_2.frm_autotech.resources

@@ -89,8 +89,11 @@
     <Compile Include="DAL\atualizaDAO.cs" />
     <Compile Include="DAL\cadastroDAO.cs" />
     <Compile Include="DAL\conexaoDAO.cs" />
+    <Compile Include="DAL\consultaPedidoDAO.cs" />
     <Compile Include="DAL\deleteDAO.cs" />
     <Compile Include="DAL\loginDAO.cs" />
+    <Compile Include="DAL\PedidoDAO.cs" />
+    <Compile Include="DAL\ProdutoDAO.cs" />
     <Compile Include="DAL\SessaoDAO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -98,17 +101,41 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_atSessao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_atSessao.Designer.cs">
+      <DependentUpon>frm_atSessao.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_atualizarDados.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_atualizarDados.Designer.cs">
       <DependentUpon>frm_atualizarDados.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_autotech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_autotech.Designer.cs">
+      <DependentUpon>frm_autotech.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_cadastro.Designer.cs">
       <DependentUpon>frm_cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_comprar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_comprar.Designer.cs">
+      <DependentUpon>frm_comprar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_comprovante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_comprovante.Designer.cs">
+      <DependentUpon>frm_comprovante.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_dados.cs">
       <SubType>Form</SubType>
@@ -128,6 +155,12 @@
     <Compile Include="frm_logon.Designer.cs">
       <DependentUpon>frm_logon.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_loja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_loja.Designer.cs">
+      <DependentUpon>frm_loja.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,11 +172,23 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_atSessao.resx">
+      <DependentUpon>frm_atSessao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_atualizarDados.resx">
       <DependentUpon>frm_atualizarDados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_autotech.resx">
+      <DependentUpon>frm_autotech.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_cadastro.resx">
       <DependentUpon>frm_cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_comprar.resx">
+      <DependentUpon>frm_comprar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_comprovante.resx">
+      <DependentUpon>frm_comprovante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_dados.resx">
       <DependentUpon>frm_dados.cs</DependentUpon>
@@ -153,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_logon.resx">
       <DependentUpon>frm_logon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_loja.resx">
+      <DependentUpon>frm_loja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_menu.resx">
       <DependentUpon>frm_menu.cs</DependentUpon>
@@ -205,6 +253,20 @@
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Items\bateria_cral.jpg" />
+    <EmbeddedResource Include="Resources\Items\bateria_moura.jpg" />
+    <EmbeddedResource Include="Resources\Items\correia_corsa.jpg" />
+    <EmbeddedResource Include="Resources\Items\disco_hf.jpg" />
+    <EmbeddedResource Include="Resources\Items\filtro_gol.jpg" />
+    <EmbeddedResource Include="Resources\Items\filtro_tecfil.jpg" />
+    <EmbeddedResource Include="Resources\Items\freio_fremax.jpg" />
+    <EmbeddedResource Include="Resources\Items\kit_acdelco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\uma-fabrica-de-automoveis-com-muitos-carros-na-linha-de-montagem-generative-ai_763336-251.jpg" />
+    <None Include="Resources\uma-fabrica-de-automoveis-com-muitos-carros-na-linha-de-montagem-generative-ai_763336-2511.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

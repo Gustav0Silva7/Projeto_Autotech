@@ -117,29 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="invisivel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\invisivel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seta2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seta2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="visivel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\visivel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seta_horizontal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seta_horizontal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seta21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seta21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="autotech_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\autotech_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="uma-fabrica-de-automoveis-com-muitos-carros-na-linha-de-montagem-generative-ai_763336-251" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\uma-fabrica-de-automoveis-com-muitos-carros-na-linha-de-montagem-generative-ai_763336-2511.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

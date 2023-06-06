@@ -27,6 +27,8 @@ namespace Projeto_Autotech_2.DAL
             this.mensagem = "";
             verificador = false;
         }
+        public int IdCliente { get; private set; }
+
         public bool IniciarSessao(string email, string senha)
         {
             con = new conexaoDAO();
@@ -48,7 +50,7 @@ namespace Projeto_Autotech_2.DAL
                     Senha = senha;
                     while (dr.Read())
                     {
-
+                        IdCliente = Convert.ToInt32(dr["id_cliente"]);
                         NomeCliente = dr["nome"].ToString();
                         SobrenomeCliente = dr["sobrenome"].ToString();
                         DataNascimentoCliente = Convert.ToDateTime(dr["data_nascimento"]);
@@ -63,6 +65,28 @@ namespace Projeto_Autotech_2.DAL
             }
 
             return verificador;
+        }
+        public string ConsultarNomeCliente(int idCliente)
+        {
+            string nomeCliente = "";
+
+            con = new conexaoDAO();
+            cmd = new MySqlCommand();
+
+            cmd.CommandText = "SELECT nome FROM cliente WHERE id_cliente = @idCliente";
+            cmd.Parameters.AddWithValue("@idCliente", idCliente);
+
+            try
+            {
+                cmd.Connection = con.conectar();
+                nomeCliente = Convert.ToString(cmd.ExecuteScalar());
+            }
+            catch (MySqlException)
+            {
+                mensagem = "Erro ao consultar o nome do cliente";
+            }
+
+            return nomeCliente;
         }
     }
 }

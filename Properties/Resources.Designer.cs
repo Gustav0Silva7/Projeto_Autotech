@@ -123,6 +123,17 @@ namespace Projeto_Autotech_2.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap uma_fabrica_de_automoveis_com_muitos_carros_na_linha_de_montagem_generative_ai_763336_251 {
+            get {
+                object obj = ResourceManager.GetObject("uma-fabrica-de-automoveis-com-muitos-carros-na-linha-de-montagem-generative-ai_76" +
+                        "3336-251", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap visivel {
             get {
                 object obj = ResourceManager.GetObject("visivel", resourceCulture);
